@@ -1,6 +1,14 @@
 #include <stdio.h>
-int main(void){
-	/*This is the starting point of everyc program*/
-	return (0);
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	printf("Hello to the World!\n");
+
+	return (0);
 }
