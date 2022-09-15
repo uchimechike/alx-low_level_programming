@@ -8,29 +8,20 @@
 
 void more_numbers(void)
 {
-	int i, j, k;
+	int i, j, remainder;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j = 48; j < 50; j++)
+		for (j = 0; j < 15; j++)
 		{
-			for (k = 48; k <= 57; k++)
+			remainder = j;
+
+			if (j > 9)
 			{
-				if (j == 48)
-				{
-					_putchar(k);
-				} else
-				{
-					if (!(k >= 53))
-					{
-						_putchar(j);
-						_putchar(k);
-					} else
-					{
-						break;
-					}
-				}
+				_putchar(49);
+				remainder = j % 10;
 			}
+			_putchar(remainder + 48);
 		}
 		_putchar('\n');
 	}
