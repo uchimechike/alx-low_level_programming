@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - function that prints numbers from 1 to 100 with certain conditions
